@@ -1,4 +1,4 @@
-# PDF Chat App 📄
+# PDF Chatbot
 
 This is a simple application that lets you interact with your PDF documents by asking questions and getting answers. It's built to handle PDFs with both standard text and images, extracting all the content to create a powerful search and chat experience.
 
@@ -23,10 +23,6 @@ pip install -r requirements.txt
 ```
 
 You must also have the **Tesseract OCR engine** installed on your system. This is a crucial component for reading text from images.
-
-  - **Windows**: Download and run the installer from the official Tesseract GitHub page.
-  - **macOS**: `brew install tesseract`
-  - **Linux**: `sudo apt-get install tesseract-ocr`
 
 ### Setup
 
