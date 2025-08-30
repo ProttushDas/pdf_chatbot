@@ -1,0 +1,15 @@
+streamlit
+python-dotenv
+PyPDF2
+unstructured[all-docs]
+pillow
+lxml
+langchain
+langchain-community
+langchain-google-genai
+tiktoken
+nest_asyncio
+faiss-cpu
+python-dotenv 
+pillow 
+pytesseract
