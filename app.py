@@ -7,7 +7,7 @@ import fitz  # PyMuPDF
 from PIL import Image
 import pytesseract
 from langchain.text_splitter import CharacterTextSplitter
-from langchain.vectorstores import FAISS
+from langchain.vectorstores import Chroma
 from langchain_google_genai import GoogleGenerativeAIEmbeddings, ChatGoogleGenerativeAI
 
 def read_pdf_with_images(pdf_file):
@@ -71,7 +71,7 @@ def create_search_index(chunks, api_key):
         google_api_key=api_key
     )
     
-    return FAISS.from_texts(chunks, embeddings)
+    return Chroma.from_texts(chunks, embeddings)
 
 def main():
     load_dotenv()
